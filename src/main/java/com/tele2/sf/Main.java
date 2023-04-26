@@ -38,7 +38,7 @@ public class Main {
                 Quarkus.waitForExit();
                 return 0;
             } catch (Exception e) {
-                log.error("(Quarkus App = {}] failed to start with [Exception = {}]", APP_NAME, e.getMessage());
+                log.error("Quarkus App {} failed to start. Exception occurred {}", APP_NAME, e.getMessage());
                 return -1;
             }
         }
